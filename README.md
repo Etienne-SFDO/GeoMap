@@ -1,18 +1,25 @@
-# Salesforce DX Project: Next Steps
+GeoMap
+Created by: Etienne de Klerk at Salesforce
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-## How Do You Plan to Deploy Your Changes?
+What is It?
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+A LWC that displays a google map
 
-## Configure Your Salesforce DX Project
+Why use it?
+While salesforcre publishes a LWC Map specification , there is not a standard component in the box.
+Additionally, none of the components I found provided flexibility for coord data source.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+How does it work?
 
-## Read All About It
+Drop onto any record page and configure the LWC properties to specifiy the data source for the coordinates  
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+You set the following properties:
+- custom field:  Geolocation (compound) field, e.g. myFavouriteLocation (Geolocation) and populate it using decimal geo notation  
+- Address: standard address fields, Google will do the geocoding
+- Lat/Lon, these exisit as hidden fields and are auto populated on some objects, e.g. Contact, Account, Service Appointment.  You can also specify custom lat/lon fields 
+- Icon (standard SLDS icon names) 
+- Map title
+- Zoom level
+
+
