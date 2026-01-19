@@ -1,4 +1,4 @@
-GeoMap
+**GeoMap**
 Created by: Etienne de Klerk at Salesforce
 
 
