@@ -7,12 +7,16 @@ Created by: Etienne de Klerk at Salesforce
 
 A LWC that displays a google map
 
+
 **Why use it?**
+
 While Salesforcre publishes a LWC Map specification , there is not a standard component in the box.
 Additionally, none of the components I found provided flexibility for coord data source.
 
+
 **How does it work?**
 Drop onto any record page and configure the LWC properties, you can choose various data sources for the coordinates  
+
 
 **You set the following properties**:
 - custom field:  Geolocation (compound) field, e.g. myFavouriteLocation (Geolocation) and populate it using decimal geo notation  
@@ -21,5 +25,3 @@ Drop onto any record page and configure the LWC properties, you can choose vario
 - Icon (standard SLDS icon names) 
 - Map title
 - Zoom level
-
-
