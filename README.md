@@ -1,6 +1,7 @@
 
 
-# This has moved to https://github.com/SFDO-Community-Sprints/uk-housing-geomap
+# STOP! This has moved.
+## to https://github.com/SFDO-Community-Sprints/uk-housing-geomap
 
 
 **GeoMap**
